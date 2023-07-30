@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Budget App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simple Budget App</h1>
+        <div class="balance">
+            <p>Total Income: $<span id="total-income">0</span></p>
+            <p>Total Expenses: $<span id="total-expenses">0</span></p>
+            <p>Balance: $<span id="balance">0</span></p>
+        </div>
+        <div class="input-container">
+            <input type="number" id="total-income-input" placeholder="Total Income">
+            <input type="number" id="total-expenses-input" placeholder="Total Expenses">
+            <input type="text" id="description" placeholder="Description">
+            <input type="number" id="amount" placeholder="Amount">
+            <select id="type">
+                <!-- <option value="income">Income</option>
+                    <option value="expense">Expense</option> -->
+                </select>
+                <button id="btn">Add</button>
+        </div>
+       
+    </div>
+
+    <div id="read"></div>
+
+    <!-- <script src="script.js"></script> -->
+    <script type="module" src="firebase.js"></script>
+</body>
+</html>
